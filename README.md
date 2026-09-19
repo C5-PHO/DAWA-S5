@@ -1,6 +1,8 @@
 # API RESTful de Tickets y Notificaciones
 
-<a href="https://trendshift.io/repositories/28176?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-28176" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/28176" alt="debpalash%2FVoiceStudio | Trendshift" width="250" height="55"/></a>
+<p align="center">
+  <a href="https://trendshift.io/repositories/28176?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-28176" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/28176" alt="debpalash%2FVoiceStudio | Trendshift" width="250" height="55"/></a>
+</p>
 
 API desarrollada con Node.js y Express para administrar tickets, registrar notificaciones y enviar alertas reales por correo mediante Nodemailer.
 
