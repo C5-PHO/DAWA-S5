@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const morgan = require("morgan");
+const AppError = require("./errors/AppError");
+const errorHandler = require("./middlewares/errorHandler");
 
 // Middleware
 app.use(express.json()); // Para leer JSON en las solicitudes
@@ -20,6 +22,12 @@ app.use("/notifications", notificationRoutes);
 app.get("/", (req, res) => {
   res.send("¡Bienvenido a la API RESTful!");
 });
+
+app.use((req, res, next) => {
+  next(new AppError("Ruta no encontrada", 404));
+});
+
+app.use(errorHandler);
 
 const PORT = 3000;
 app.listen(PORT, () => {
