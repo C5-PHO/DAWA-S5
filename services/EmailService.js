@@ -20,6 +20,9 @@ class EmailService {
       tls: {
         rejectUnauthorized: true,
       },
+      connectionTimeout: 15000,
+      greetingTimeout: 10000,
+      socketTimeout: 20000,
     });
   }
 

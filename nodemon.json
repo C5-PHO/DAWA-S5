@@ -1,0 +1,15 @@
+{
+  "watch": [
+    "app.js",
+    "controllers",
+    "errors",
+    "middlewares",
+    "repositories",
+    "routes",
+    "services"
+  ],
+  "ext": "js",
+  "ignore": [
+    "database/db.json"
+  ]
+}
